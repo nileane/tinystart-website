@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="robots" content="index,follow">
+        <title>TinyStart - A tiny and fast launcher for MacOS</title>
+        <style>
+            :root {
+                --bg: #efefef;
+                --color: #090022;
+            }
+            * {
+                box-sizing: border-box;
+            }
+            html {
+                font-family: system-ui, -apple-system, sans-serif;
+            }
+            body {
+                background: var(--bg);
+                color: var(--text);
+                margin: 0;
+            }
+            header, article, footer {
+                padding: 1.5em;
+            }
+
+            .hero {
+                background: linear-gradient(darkslateblue, slateblue);
+                color: white;
+                min-height: 95vh;
+                font-size: 120%;
+                display: flex;
+                flex-flow: column wrap;
+                justify-content: center;
+                align-items: center;
+                gap: .75em;
+            }
+            .hero p {
+                margin: 0;
+            }
+            .action {
+                font: inherit;
+                font-size: 2em;
+                margin: 2em 0 0;
+                padding: .25em .5em;
+            }
+
+            h1, h2 {
+                text-align: center;
+                margin: 1em 0;
+            }
+            h1 {
+                font-size: 3em;
+            }
+            h2 {
+                font-size: 2em;
+            }
+            h3 {
+                font-size: 1.5em;
+                margin: .5em 0;
+            }
+
+            .niceties {
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: space-between;
+                align-items: stretch;
+                gap: 1em;
+            }
+            .niceties h2 {
+                flex: 100%;
+            }
+            .niceties .nice {
+                background: #e4e4e4;
+                padding: .25em 1em;
+                flex: 1 1 15em;
+                border-radius: 8px;
+            }
+
+            details {
+                border-bottom: 1px solid #ccc;
+                padding: .75em 0;
+            }
+            summary {
+                font-size: 120%;
+                font-weight: 500;
+            }
+        </style>
+    </head>
+    <body>
+        <header class="hero">
+            <h1>TinyStart</h1>
+            <p class="subtitle">A tiny launcher, focused on the essentials!</p>
+            <p class="subsubtitle">Oh, and it's <em>rather fast</em> too!</p>
+            <button class="action">Get it on Ko-Fi</button>
+            <small>Updates included!</small>
+        </header>
+        <main>
+            <article class="niceties">
+                <h2>What is it for?</h2>
+                <div class="nice">
+                    <h3>Launch apps</h3>
+                    <p>Some info and maybe a picture</p>
+                </div>
+                <div class="nice">
+                    <h3>Easy access to your links and shortcuts</h3>
+                    <p>Some info and maybe a picture</p>
+                </div>
+                <div class="nice">
+                    <h3>An emoji picker that isn't picky</h3>
+                    <p>Some info and maybe a picture</p>
+                </div>
+            </article>
+            <article class="faq">
+                <h2>FAQ</h2>
+                <details>
+                    <summary>Why not use the default launcher?</summary>
+                    <p>This is why</p>
+                </details>
+                <details>
+                    <summary>I have found a bug, what do I do?</summary>
+                    <p>Send me an email about it:</p>
+                </details>
+                <details>
+                    <summary>I have an idea for another utility!</summary>
+                    <p>That's cool! Feel free to reach out to me to discuss it, I won't promise to implement it though.</p>
+                </details>
+                <details>
+                    <summary>Is it compatible with my system?</summary>
+                    <p>It only runs on MacOS 17 (Tahoe)</p>
+                </details>
+                <details>
+                    <summary>Have I heard of you somewhere else?</summary>
+                    <p>You may know me as one of the co-hosts of Comfort Zone, a MacStories podcast in which Chris, Matt and I talk
+                    about our tech journeys. If you're a subscriber to Cozy Zone, I can send you a discount!</p>
+                </details>
+                <details>
+                    <summary>Some other question</summary>
+                    <p>Some other answer</p>
+                </details>
+            </article>
+        </main>
+        <footer>
+            <small>© Niléane Dorffer 2026</small>
+        </footer>
+    </body>
+</html>
