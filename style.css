@@ -109,6 +109,7 @@ a:hover {
         border-radius: 15px;
         border: none;
         letter-spacing: var(--letter-spacing);
+        background-color: white;
         box-shadow:
             0 0.35em 0.35em rgb(0 0 0 / 0.15),
             inset 0 -0.15em rgb(0 0 0 / 0.2);
@@ -419,6 +420,7 @@ main {
             cursor: pointer;
             padding: 1rem 2.5rem 1rem 1rem;
             position: relative;
+            list-style: none;
 
             &::marker {
                 content: "";
