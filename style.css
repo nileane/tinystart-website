@@ -329,12 +329,14 @@ main {
             gap: .35em;
         }
 
-        h3 {
+        h2 {
             font-style: italic;
+            text-align: start;
+            font-size: 1.5em;
             letter-spacing: var(--letter-spacing);
         }
 
-        h3, p {
+        h2, p {
             margin: 0 0 .25em;
         }
 
