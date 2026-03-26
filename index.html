@@ -4,143 +4,154 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="robots" content="index,follow">
-        <title>TinyStart - A tiny and fast launcher for MacOS</title>
-        <style>
-            :root {
-                --bg: #efefef;
-                --color: #090022;
-            }
-            * {
-                box-sizing: border-box;
-            }
-            html {
-                font-family: system-ui, -apple-system, sans-serif;
-            }
-            body {
-                background: var(--bg);
-                color: var(--text);
-                margin: 0;
-            }
-            header, article, footer {
-                padding: 1.5em;
-            }
-
-            .hero {
-                background: linear-gradient(darkslateblue, slateblue);
-                color: white;
-                min-height: 95vh;
-                font-size: 120%;
-                display: flex;
-                flex-flow: column wrap;
-                justify-content: center;
-                align-items: center;
-                gap: .75em;
-            }
-            .hero p {
-                margin: 0;
-            }
-            .action {
-                font: inherit;
-                font-size: 2em;
-                margin: 2em 0 0;
-                padding: .25em .5em;
-            }
-
-            h1, h2 {
-                text-align: center;
-                margin: 1em 0;
-            }
-            h1 {
-                font-size: 3em;
-            }
-            h2 {
-                font-size: 2em;
-            }
-            h3 {
-                font-size: 1.5em;
-                margin: .5em 0;
-            }
-
-            .niceties {
-                display: flex;
-                flex-flow: row wrap;
-                justify-content: space-between;
-                align-items: stretch;
-                gap: 1em;
-            }
-            .niceties h2 {
-                flex: 100%;
-            }
-            .niceties .nice {
-                background: #e4e4e4;
-                padding: .25em 1em;
-                flex: 1 1 15em;
-                border-radius: 8px;
-            }
-
-            details {
-                border-bottom: 1px solid #ccc;
-                padding: .75em 0;
-            }
-            summary {
-                font-size: 120%;
-                font-weight: 500;
-            }
-        </style>
+        <title>TinyStart - A tiny launcher for MacOS focused on the essentials</title>
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <header class="hero">
-            <h1>TinyStart</h1>
-            <p class="subtitle">A tiny launcher, focused on the essentials!</p>
-            <p class="subsubtitle">Oh, and it's <em>rather fast</em> too!</p>
-            <button class="action">Get it on Ko-Fi</button>
-            <small>Updates included!</small>
+
+            <div class="heading">
+                <img src="assets/TinyStart-512px@2x.png" alt="TinyStart logo">
+                <h1>TinyStart</h1>
+                <p class="subtitle">A tiny launcher for macOS,<br>
+                fast and focused on the essentials*.</p>
+            </div>
+
+            <div class="purchase">
+                <div class="details">
+                    <p class="price">€5</p>
+                    <p class="price-details">
+                        <small>One-time purchase</small>
+                        <small>+ free updates</small>
+                    </p>
+                </div>
+                <button class="action">Buy</button>
+            </div>
+
+            <div class="hero-screenshots">
+                <a class="video" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#fafafa" viewBox="0 0 256 256"><path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm40.55,110.58-52,36A8,8,0,0,1,104,164V92a8,8,0,0,1,12.55-6.58l52,36a8,8,0,0,1,0,13.16Z"></path></svg>
+                </a>
+                <picture class="one">
+                    <source srcset="assets/Screenshot1.png" type="image/png">
+                    <img src="assets/Screenshot1.png" alt="A screenshot of TinyStart in action">
+                </picture>
+
+                <picture class="two">
+                    <source srcset="assets/Screenshot-emojis.png" type="image/png">
+                    <img src="assets/Screenshot-emojis.png" alt="A screenshot of TinyStart in action">
+                </picture>
+            </div>
+
+            <p class="asterisk">* Yes, emojis are essential.</p>
+
         </header>
+
         <main>
             <article class="niceties">
-                <h2>What is it for?</h2>
                 <div class="nice">
-                    <h3>Launch apps</h3>
-                    <p>Some info and maybe a picture</p>
+                    <span class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#6c5ccc" viewBox="0 0 256 256"><path d="M101.85,191.14C97.34,201,82.29,224,40,224a8,8,0,0,1-8-8c0-42.29,23-57.34,32.86-61.85a8,8,0,0,1,6.64,14.56c-6.43,2.93-20.62,12.36-23.12,38.91,26.55-2.5,36-16.69,38.91-23.12a8,8,0,1,1,14.56,6.64Zm122-144a16,16,0,0,0-15-15c-12.58-.75-44.73.4-71.4,27.07h0L88,108.7A8,8,0,0,1,76.67,97.39l26.56-26.57A4,4,0,0,0,100.41,64H74.35A15.9,15.9,0,0,0,63,68.68L28.7,103a16,16,0,0,0,9.07,27.16l38.47,5.37,44.21,44.21,5.37,38.49a15.94,15.94,0,0,0,10.78,12.92,16.11,16.11,0,0,0,5.1.83A15.91,15.91,0,0,0,153,227.3L187.32,193A16,16,0,0,0,192,181.65V155.59a4,4,0,0,0-6.83-2.82l-26.57,26.56a8,8,0,0,1-11.71-.42,8.2,8.2,0,0,1,.6-11.1l49.27-49.27h0C223.45,91.86,224.6,59.71,223.85,47.12Z"></path></svg>
+                    </span>
+                    <div>
+                        <h3>Launch apps, fast.</h3>
+                        <p>TinyStart displays search results instantly on every keystroke. The app learns your favorite apps over time and prioritizes them.</p>
+                        <small><strong>Planned:</strong> More keyboard shortcuts for selecting results, Pinned apps.</small>
+                    </div>
                 </div>
+
                 <div class="nice">
-                    <h3>Easy access to your links and shortcuts</h3>
-                    <p>Some info and maybe a picture</p>
+                    <span class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#6c5ccc" viewBox="0 0 256 256"><path d="M240,102c0,70-103.79,126.66-108.21,129a8,8,0,0,1-7.58,0C119.79,228.66,16,172,16,102A62.07,62.07,0,0,1,78,40c20.65,0,38.73,8.88,50,23.89C139.27,48.88,157.35,40,178,40A62.07,62.07,0,0,1,240,102Z"></path></svg>
+                    </span>
+                    <div>
+                        <h3>Insert Emojis</h3>
+                        <p>TinyStart's <strong>Emoji picker</strong> is everything Apple's native Emoji picker isn't: it's fast, it lets you insert Emojis in any text field, and it learns your favorite Emojis over time.</p>
+                        <small><strong>Planned:</strong> Add your own Emoji keywords.</small>
+                    </div>
                 </div>
+
                 <div class="nice">
-                    <h3>An emoji picker that isn't picky</h3>
-                    <p>Some info and maybe a picture</p>
+                    <span class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#6c5ccc" viewBox="0 0 256 256"><path d="M117.18,188.74a12,12,0,0,1,0,17l-5.12,5.12A58.26,58.26,0,0,1,70.6,228h0A58.62,58.62,0,0,1,29.14,127.92L63.89,93.17a58.64,58.64,0,0,1,98.56,28.11,12,12,0,1,1-23.37,5.44,34.65,34.65,0,0,0-58.22-16.58L46.11,144.89A34.62,34.62,0,0,0,70.57,204h0a34.41,34.41,0,0,0,24.49-10.14l5.11-5.12A12,12,0,0,1,117.18,188.74ZM226.83,45.17a58.65,58.65,0,0,0-82.93,0l-5.11,5.11a12,12,0,0,0,17,17l5.12-5.12a34.63,34.63,0,1,1,49,49L175.1,145.86A34.39,34.39,0,0,1,150.61,156h0a34.63,34.63,0,0,1-33.69-26.72,12,12,0,0,0-23.38,5.44A58.64,58.64,0,0,0,150.56,180h.05a58.28,58.28,0,0,0,41.47-17.17l34.75-34.75a58.62,58.62,0,0,0,0-82.91Z"></path></svg>
+                    </span>
+                    <div>
+                        <h3>Save & open Links</h3>
+                        <p>Add your frequently used URLs for quick access. Works with websites and your favorite app's deep links.</p>
+                        <small><strong>Planned:</strong> Import Shortcuts, add custom search engines.</small>
+                    </div>
                 </div>
-            </article>
-            <article class="faq">
-                <h2>FAQ</h2>
-                <details>
-                    <summary>Why not use the default launcher?</summary>
-                    <p>This is why</p>
-                </details>
-                <details>
-                    <summary>I have found a bug, what do I do?</summary>
-                    <p>Send me an email about it:</p>
-                </details>
-                <details>
-                    <summary>I have an idea for another utility!</summary>
-                    <p>That's cool! Feel free to reach out to me to discuss it, I won't promise to implement it though.</p>
-                </details>
-                <details>
-                    <summary>Is it compatible with my system?</summary>
-                    <p>It only runs on MacOS 17 (Tahoe)</p>
-                </details>
-                <details>
-                    <summary>Have I heard of you somewhere else?</summary>
-                    <p>You may know me as one of the co-hosts of Comfort Zone, a MacStories podcast in which Chris, Matt and I talk
-                    about our tech journeys. If you're a subscriber to Cozy Zone, I can send you a discount!</p>
-                </details>
-                <details>
-                    <summary>Some other question</summary>
-                    <p>Some other answer</p>
-                </details>
+
+                <div class="nice">
+                    <span class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#6c5ccc" viewBox="0 0 256 256"><path d="M245,110.64A16,16,0,0,0,232,104H216V88a16,16,0,0,0-16-16H130.67L102.94,51.2a16.14,16.14,0,0,0-9.6-3.2H40A16,16,0,0,0,24,64V208h0a8,8,0,0,0,8,8H211.1a8,8,0,0,0,7.59-5.47l28.49-85.47A16.05,16.05,0,0,0,245,110.64ZM93.34,64,123.2,86.4A8,8,0,0,0,128,88h72v16H69.77a16,16,0,0,0-15.18,10.94L40,158.7V64Z"></path></svg>
+                    </span>
+                    <div>
+                        <h3>Save & open Folders</h3>
+                        <p>Instead of indexing everything on your Mac, TinyStart allows you to save only your favorite folders and open them quickly in Finder.</p>
+                    </div>
+                </div>
+
+                <div class="nice">
+                    <span class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#6c5ccc" viewBox="0 0 256 256"><path d="M232,96a72,72,0,0,1-100.94,66L79,222.22c-.12.14-.26.29-.39.42a32,32,0,0,1-45.26-45.26c.14-.13.28-.27.43-.39L94,124.94a72.07,72.07,0,0,1,83.54-98.78,8,8,0,0,1,3.93,13.19L144,80l5.66,26.35L176,112l40.65-37.52a8,8,0,0,1,13.19,3.93A72.6,72.6,0,0,1,232,96Z"></path></svg>
+                    </span>
+                    <div>
+                        <h3>Customizable</h3>
+                        <p>Adjust TinyStart's size in Settings, drag it to reposition onscreen, create custom icons for your saved Links, and assign your own keyboard shortcuts for TinyStart and its Emoji Picker.</p>
+                        <small><strong>Planned:</strong> Customize TinyStart's UI accent color</small>
+                    </div>
+                </div>
+
+                <div class="nice">
+                    <img src="assets/Screenshot-settings.png" alt="A screenshot of TinyStart's settings screen" class="settings-screenshot">
+                </div>
             </article>
         </main>
+
+        <div class="faq">
+            <h2>Frequently Asked Questions</h2>
+            <p>If your question isn't listed below, feel free to <a href="mailto:contact@nileane.fr">contact me via email</a> :)</p>
+            <details>
+                <summary>Why use this instead of Spotlight or Raycast?</summary>
+                <p>TinyStart is designed to be lightweight and fast. Unlike Spotlight, it never becomes overcrowded with search results you don't need. And unlike Alfred or Raycast, it will never support third-party extensions, so it can stay focused on the essentials.</p>
+            </details>
+            <details>
+                <summary>Can TinyStart also replace my clipboard manager?</summary>
+                <p>For now, TinyStart is focused on apps, links, and emojis, and does not include clipboard management features.</p>
+                <p>In my opinion, clipboard management is always better handled by a dedicated app. My favorite ones over the years have been <a href="https://tapbots.com/pastebot/" target="_blank">Pastebot</a> and <a href="https://maccy.app/" target="_blank">Maccy</a>.</p>
+            </details>
+            <details>
+                <summary>Is it compatible with my Mac?</summary>
+                <p>TinyStart is compatible with <strong>macOS 16.8 Sequoia, macOS 26.0 Tahoe, and later versions.</strong></p>
+                <p>You will be provided with a universal binary which works for both Intel and Apple Silicon Macs.</p>
+            </details>
+            <details>
+                <summary>Can I get a free trial?</summary>
+                <p>I do not offer a free trial version of TinyStart at this time. When you purchase the app, you will get a ZIP file containing the full app, no license key required.</p>
+                <p>That being said, if you are not satisfied with your purchase, feel free to contact me <a href="mailto:contact@nileane.fr">via email</a> <strong>within 14 days</strong>. I will provide a full refund.</p>
+            </details>
+            <details>
+                <summary>How can I report bugs and provide feedback?</summary>
+                <p>Feel free to message me <a href="https://nileane.fr/@nileane">on Mastodon</a> or via email: <a href="mailto:contact@nileane.fr">contact@nileane.fr</a></p>
+            </details>
+            <details>
+                <summary>Is AI used in the making of this app?</summary>
+                <p>LLM-powered features are built into the development tools that I use (mainly Visual Studio Code), and I do use those when they pop up for inline suggestions or code completions.</p>
+                <p>I may use the Chat sidebar thingy in Visual Studio Code to ask questions and help me figure out solutions to problems, however I do not let LLMs write full chunks of code for me, and I do not pay for AI tools or services.</p>
+            </details>
+            <details>
+                <summary>Does TinyStart collect data?</summary>
+                <p><strong>No</strong>, TinyStart does not collect any personal data. Everything is stored locally on your device: your preferences, your saved links and folders, as well as the ranking counters for your frequently used apps and emojis.</p>
+                <p><strong>No telemetry is performed either</strong>. TinyStart only talks to the Internet for two purposes: updating the app and fetching favicons for your saved links.</p>
+            </details>
+            <details>
+                <summary>Have I heard of you somewhere else?</summary>
+                <p>My name is <strong>Niléane</strong>, you may know me as one of the co-hosts of <a href="https://macstories.net/comfort-zone">Comfort Zone</a>, a MacStories podcast in which Christopher Lawley, Matt Birchler and I talk about tech and challenge each other to get our of comfort zones.</p>
+                <p>I am also active on <a href="https://nileane.fr/@nileane">Mastodon</a>, where I write about tech and my activities as a trans feminist activist in France.</p>
+            </details>
+        </div>
+
         <footer>
             <small>© Niléane Dorffer 2026</small>
         </footer>
