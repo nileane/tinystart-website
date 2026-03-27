@@ -506,7 +506,7 @@ footer {
     max-width: var(--page-width);
     margin: 0 auto;
     background: white;
-    text-align: end;
+    text-align: center;
 
     & small {
         font-size: 1em;
