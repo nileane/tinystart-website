@@ -96,7 +96,6 @@ a:hover {
         text-decoration: none;
         position: absolute;
         inset-block-start: 1.5em;
-        inset-inline-start: 3em;
         display: flex;
         align-items: center;
         flex-flow: row nowrap;
@@ -124,47 +123,6 @@ a:hover {
         }
     }
 
-    .small-links {
-        position: absolute;
-        inset-block-start: 2.1em;
-        inset-inline-end: 2.1em;
-        display: flex;
-        flex-flow: column;
-        align-items: end;
-        gap: .35em;
-        font-size: 55%;
-        font-style: italic;
-
-
-        .release-notes {
-            color: rgba(255, 255, 255, 1);
-            text-decoration-thickness: 1.5px;
-            text-decoration-color: rgba(255, 255, 255, 0.351);
-
-            &:hover {
-                text-decoration-color: rgba(255, 255, 255, 1);
-            }
-        }
-
-        .follow-mastodon {
-            color: rgba(255, 255, 255, 1);
-            text-decoration-thickness: 1.5px;
-            text-decoration-color: rgba(255, 255, 255, 0.351);
-            display: inline-block;
-
-            &:hover {
-                text-decoration-color: rgba(255, 255, 255, 1);
-            }
-
-            img {
-                width: 1.6em;
-                height: 1.6em;
-                object-fit: contain;
-                margin-inline-end: 1em;
-                vertical-align: middle;
-            }
-        }
-    }
 
     .heading {
         display: flex;
@@ -236,11 +194,34 @@ a:hover {
         display: flex;
         flex-flow: column wrap;
         justify-content: center;
-        gap: .1em;
+        gap: .2em;
         font-style: italic;
         text-align: inline-start;
         border-inline-start: 2px solid rgb(255 255 255 / 0.2);
         padding: 0 0 0 1em;
+
+        .one-time {
+            font-size: 1em;
+        }
+
+        .latest-release {
+            display: flex;
+            flex-flow: row;
+            align-items: end;
+            gap: .5em;
+            font-size: .7em;
+            font-style: italic;
+
+            a {
+                color: rgba(255, 255, 255, 1);
+                text-decoration-thickness: 1.5px;
+                text-decoration-color: rgba(255, 255, 255, 0.351);
+
+                &:hover {
+                    text-decoration-color: rgba(255, 255, 255, 1);
+                }
+            }
+        }
     }
 
     .hero-screenshots {
