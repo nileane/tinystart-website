@@ -209,16 +209,17 @@ a:hover {
             flex-flow: row;
             align-items: end;
             gap: .5em;
-            font-size: .7em;
-            font-style: italic;
+            font-size: .75em;
+            font-style: normal;
 
             a {
-                color: rgba(255, 255, 255, 1);
+                color: #ffd85d;
                 text-decoration-thickness: 1.5px;
-                text-decoration-color: rgba(255, 255, 255, 0.351);
+                text-decoration-color: #ffd85d4f;
+                font-weight: 700;
 
                 &:hover {
-                    text-decoration-color: rgba(255, 255, 255, 1);
+                    text-decoration-color: #ffd85d;
                 }
             }
         }
